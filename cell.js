@@ -4,7 +4,7 @@ class cell{
     this.v = createVector(0,0);
     this.a = createVector(0,0);
     this.maxspeed = random(5,5);
-    this.maxforce = random(0.05,0.1);
+    this.maxforce = random(0.1,0.2);
     this.steer = createVector(0,0);
     this.r = random(2,30);
   }
