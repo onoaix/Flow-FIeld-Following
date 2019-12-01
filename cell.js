@@ -9,7 +9,7 @@ class cell{
     this.r = random(2,30);
   }
   
-  zhuanzhoua(){
+  zhuanzhou(){
     let target = flowfield.caculate(this.loc.x,this.loc.y);
     target.setMag(this.maxspeed);
     this.steer = p5.Vector.sub(target,this.v);

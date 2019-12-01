@@ -13,7 +13,7 @@ function setup() {
   cells = [];
   num = 150;
   for (let i = 0; i<num; i++){
-      cells.push(new cell(50,50));
+      cells.push(new cell(random(width),random(height)));
     }
 
   }
@@ -30,7 +30,7 @@ function draw() {
   
   for(let i = 0; i<cells.length; i++){
     //let mouse = createVector(mouseX+random(-10,10),mouseY+random(-10,10));
-    cells[i].zhuanzhoua();
+    cells[i].zhuanzhou();
     cells[i].update();
     cells[i].display();
   }
