@@ -5,13 +5,13 @@ let t;
 
 function setup() {
   
-  createCanvas(900, 600);
+  createCanvas(windowWidth/2, windowHeight/2);
   t = 0;
 
   flowfield = new field();
   flowfield.update(0);
   cells = [];
-  num = 150;
+  num = 100;
   for (let i = 0; i<num; i++){
       cells.push(new cell(random(width),random(height)));
     }
@@ -25,7 +25,7 @@ function draw() {
 
   flowfield.update(t);
   flowfield.display();
-  t+=0.01;
+  t+=0.004;
   
   
   for(let i = 0; i<cells.length; i++){
@@ -49,7 +49,7 @@ function draw() {
 
 
 
-function mousePressed(){
+function mouseDragged(){
   cells.push(new cell(mouseX,mouseY));
 }
 

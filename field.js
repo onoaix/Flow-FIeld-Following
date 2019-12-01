@@ -26,8 +26,8 @@ class field{
 
 
 	display(){
-   	   	stroke(0,150);
-   	   	fill(0,150);
+   	   	stroke(0,50);
+   	   	fill(0,50);
    	   	strokeWeight(1);
 		for (let i = 0; i < this.column; i++) {
 			for (let j = 0; j < this.row; j++){
