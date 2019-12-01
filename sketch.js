@@ -11,7 +11,7 @@ function setup() {
   flowfield = new field();
   flowfield.update(0);
   cells = [];
-  num = 350;
+  num = 150;
   for (let i = 0; i<num; i++){
       cells.push(new cell(50,50));
     }
@@ -24,7 +24,7 @@ function draw() {
   background(220);
 
   flowfield.update(t);
-  //flowfield.display();
+  flowfield.display();
   t+=0.01;
   
   
@@ -35,12 +35,12 @@ function draw() {
     cells[i].display();
   }
 
-  fill(220);
-  stroke(220);
-  strokeWeight(6);
-  textAlign(CENTER);
-  textSize(50);
-  text('ONOAIX',width/2,height/2);
+  //fill(220);
+  //stroke(220);
+  //strokeWeight(6);
+  //textAlign(CENTER);
+  //textSize(50);
+  //text('ONOAIX',width/2,height/2);
 
 
   
