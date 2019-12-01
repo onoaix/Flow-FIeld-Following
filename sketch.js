@@ -5,7 +5,7 @@ let t;
 
 function setup() {
   
-  createCanvas(windowWidth/2, windowHeight/2);
+  createCanvas(900, 600);
   t = 0;
 
   flowfield = new field();
